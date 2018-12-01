@@ -1,0 +1,316 @@
+.custom {
+    position: relative;
+    cursor: url(Asset/cursor.png), auto;
+z-index: -50;
+
+}
+
+body
+{
+    background-color: #393939;
+
+}
+
+.headimage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+
+}
+
+.home{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    cursor: url(Asset/cursor.png), auto;
+    width: 80%;
+    
+}
+
+.home:hover{
+
+    cursor: url(Asset/cursor.png), auto;
+}
+
+#homebutton{
+    position: absolute;
+    top:20px;
+    width: 6%;
+}
+
+.musicpic{    
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    z-index: 20;
+}
+
+.title
+{
+    font-size: 1.5em;
+    color: ghostwhite;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.question
+{
+    font-size: 1em;
+    color: ghostwhite;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.winepictures
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.wines
+{
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    cursor: url(Asset/cursor.png), auto;
+/*    border: solid white;*/
+}
+
+.block
+{
+        position: relative;
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+    width:24%;
+    opacity: 0.5;
+        z-index: 100;
+}
+
+.block:hover
+{
+        position: relative;
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+    width:24%;   
+    z-index: 100;
+    cursor: url(Asset/cursor.png), auto;
+    opacity: 1;
+}
+
+.block:active
+{
+    position: relative;
+    opacity: 1;
+        z-index: 100;
+}
+
+.wine
+{
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.text
+{
+    display: block;
+    margin-left:0;
+    margin-right: auto;
+    width:80%;
+}
+
+#redoptions
+{
+    position: relative;
+    display: inline-block;
+        z-index: 100;
+}
+
+.button{
+    display:block;
+    float:left;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px ;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.redbutton
+{
+    background-color: indianred;
+    z-index: 100;
+}
+
+.redbutton:hover
+{
+    background-color: transparent;
+    border:solid;
+    border-color: indianred;
+    color:white;
+    z-index: 100;
+        cursor: url(Asset/cursor.png), auto;
+}
+
+.whitebutton
+{
+    background-color: lightgoldenrodyellow;
+    color:dimgrey;
+    font-weight: 200;
+    z-index: 100;
+}
+
+.whitebutton:hover
+{
+    background-color: transparent;
+    border:solid;
+    border-color: lightgoldenrodyellow;
+    color:lightgoldenrodyellow;
+    z-index: 100;
+        cursor: url(Asset/cursor.png), auto;
+}
+
+.sparklingbutton
+{
+    background-color: peachpuff;
+    color:dimgray;
+    font-weight: 200;
+    z-index: 100;
+}
+
+.sparklingbutton:hover
+{
+    background-color: transparent;
+    border:solid;
+    border-color: peachpuff;
+    color:peachpuff;
+    z-index: 100;
+    cursor: url(Asset/cursor.png), auto;
+}
+
+
+.dessertbutton
+{
+    background-color: darkorange;
+    color:white;
+    font-weight: 200;
+    z-index: 100;
+}
+
+.dessertbutton:hover
+{
+    background-color: transparent;
+    border:solid;
+    border-color: orange;
+    color:orange;
+    z-index: 100;
+    cursor: url(Asset/cursor.png), auto;
+}
+
+.winetext
+{
+
+    background-color: grey;
+    font-size: 1em;
+    color: ghostwhite;
+    text-align: left;
+    margin: auto;
+    width: 30%;
+    margin-top: 300px;
+    padding:10px;  
+
+}
+
+
+.music
+{
+
+    margin-left: auto;
+    margin-right: auto;
+    width:15%;
+    transition: all .2s ease-in-out;
+    
+}
+
+.music:hover
+{
+     width:20%;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+
+.musicicon{
+    margin: auto;
+    width: 30%;
+    margin-top: 30px;
+}
+
+#musicicon{
+    position: relative;
+    z-index: 600000;
+    cursor: url(Asset/cursor.png), auto;
+}
+
+.spotify
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 5%;
+    cursor: url(Asset/cursor.png), auto;
+     transition: all .2s ease-in-out;
+}
+
+
+.spotify:hover{
+         width:9%;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    cursor: url(Asset/cursor.png), auto;
+    
+}
+
+
+
+#movered{
+    position: relative;
+    z-index: 50;
+
+}
+
+

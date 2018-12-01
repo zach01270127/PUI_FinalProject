@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pair your wine with music!</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+
+
+    <div class="home" id="home1" style="display:none;">
+    <img id="homebutton" src="Asset/home.png" onclick="refresh()">
+    
+    </div>
+    <div id="instructions">
+<!--    head image-->
+    <div>
+    <img class="headimage" src="Asset/winedrop.png" alt=" " >
+        
+    </div>
+        
+
+    
+<!--    text-->
+    <div>
+        <p class="title">Pair your wine with music!</p>
+        <p class="question">What wine do you have?</p>
+    </div>
+
+        
+        
+    </div>
+    
+        <div id="sweetred" style="display:none;">
+        <img class="musicpic"  src="Asset/sweetredmusic.jpg" alt=" "  >
+        <a href="https://open.spotify.com/album/1hvISqMNwWEVjOJ0A3cGsp"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+    
+            <div id="dryred" style="display:none;">
+        <img class="musicpic"  src="Asset/dryred.jpg" alt=" "  >
+        <a href="https://open.spotify.com/album/1ZPtIPAHcNHgLuL0K6BzJN"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+    
+                <div id="sweetwhite" style="display:none;">
+        <img class="musicpic"  src="Asset/sweetwhite.png" alt=" "  >
+        <a href="https://open.spotify.com/album/2XtZszTmaxIQHqYKiLrRaX"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+    
+                    <div id="drywhite" style="display:none;">
+        <img class="musicpic"  src="Asset/drywhite.png" alt=" "  >
+        <a href="https://open.spotify.com/album/6yoGOJsTjU7w2amKcUUX7S"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+
+    
+                        <div id="whitesparkling" style="display:none;">
+        <img class="musicpic"  src="Asset/whitesparkling.jpg" alt=" "  >
+        <a href="https://open.spotify.com/album/4HC2G7sSf1JG3puEMHvQBb"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+    
+
+    
+        
+                        <div id="redsparkling" style="display:none;">
+        <img class="musicpic"  src="Asset/redsparkling.jpg" alt=" "  >
+        <a href="https://open.spotify.com/album/0T6V4pt9LwYgrYTEQrjISP"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+    
+                <div id="whitedessert" style="display:none;">
+        <img class="musicpic"  src="Asset/whitedessert.jpg" alt=" "  >
+        <a href="https://open.spotify.com/album/0nSzBICzQHea8grwfqa5Gb"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+    
+                    <div id="nutty" style="display:none;">
+        <img class="musicpic"  src="Asset/nutty.jpg" alt=" "  >
+        <a href="https://open.spotify.com/album/3tx8gQqWbGwqIGZHqDNrGe"><img  class="spotify"  src="Asset/spotify.png"></a>
+        
+    </div>
+    
+    
+          <div id="sweetredtext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="showsweetredmusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+        
+          <div id="dryredtext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="showdryredmusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+    
+    
+              <div id="sweetwhitetext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="showsweetwhitemusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+                  <div id="drywhitetext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="showdrywhitemusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+    
+                      <div id="whitesparklingtext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="showwhitesparklingmusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+                          <div id="redsparklingtext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="showredsparklingmusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+
+    
+    
+      
+                          <div id="whitedeseerttext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="showwhitedeseertmusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+    
+                              <div id="nuttytext" style="display:none;">  
+      <p class="winetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+       
+              <div class="musicicon" >
+        <img onclick="shownuttymusic(); this.onclick=null;" id="musicicon" class="music" src="Asset/music.png" alt=" " >
+              </div>
+      </div>
+    
+<!--    wine texts-->    
+        <div class="wines" >
+            <div class="block" id="movered">
+                <div class="red" id="btnred" onclick="redclick(); this.onclick=null;">
+                        <img class="text" src="Asset/redtext.png" alt="red" >
+                        <img class="wine" src="Asset/red.png" alt="red" >
+                     <div id="redoptions" style="display:none;">
+                        <button class="button redbutton" onclick="showsweetredtext(); this.onclick=null;">Sweet Red</button>
+                        <button class="button redbutton" onclick="showdryredtext(); this.onclick=null;">Dry Red</button>
+                </div>
+                </div>
+                   
+            </div >
+            
+            
+            
+            <div class="block" id="movewhite">
+                <div class="white" id="btnwhite" onclick="whiteclick(); this.onclick=null;">
+                        <img class="text" src="Asset/whitetext.png" alt="red" >
+                        <img class="wine" src="Asset/white.png" alt="red" >
+                     <div id="whiteoptions" style="display:none;">
+        
+                        <button class="button whitebutton" onclick="showsweetwhitetext(); this.onclick=null;">Sweet White</button>
+                        <button class="button whitebutton" onclick="showdrywhitetext(); this.onclick=null;">Dry White</button>
+                </div>
+                </div>
+                
+            </div>
+            <div class="block" id="movesparkling">
+                <div class="sparkling" id="btnsparkling" onclick="sparklingclick(); this.onclick=null;">
+                        <img class="text" src="Asset/sparklingtext.png" alt="red" >
+                <img class="wine" src="Asset/sparkling.png" alt="red" >
+                     <div id="sparklingoptions" style="display:none;">
+                        <button class="button sparklingbutton" onclick="showwhitesparklingtext(); this.onclick=null;">White Sparkling</button>
+                        <button class="button sparklingbutton" onclick="showredsparklingtext(); this.onclick=null;">Red Sparkling</button>
+                </div>
+                </div>
+                
+            </div>
+            <div class="block" id="movedessert">
+                <div class="dessert" id="btndessert" onclick="dessertclick(); this.onclick=null;">
+                       <img class="text" src="Asset/desserttext.png" alt="red" >
+                <img class="wine" src="Asset/dessert.png" alt="red" >
+                     <div id="dessertoptions" style="display:none;">
+                        <button class="button dessertbutton" onclick="showwhitedeseerttext(); this.onclick=null;">White Dessert</button>
+                        <button class="button dessertbutton" onclick="shownuttytext(); this.onclick=null;">Nutty Oxidized Fortified</button>
+                </div>
+                </div>
+                
+            </div>
+    </div>
+            
+<script src="anime.min.js"></script>      
+<script>
+    
+    function redclick(){        
+            $("#home1").show(500);
+            var red = document.querySelector('#movered .red');
+            var instructions = document.getElementById('instructions');
+   instructions.style.display = ((instructions.style.display != 'none') ? 'none' : 'block');
+            var movewhite = document.getElementById('movewhite');
+   movewhite.style.display = ((movewhite.style.display != 'none') ? 'none' : 'block');
+            var movesparkling = document.getElementById('movesparkling');
+   movesparkling.style.display = ((movesparkling.style.display != 'none') ? 'none' : 'block');
+            var movedessert = document.getElementById('movedessert');
+   movedessert.style.display = ((movedessert.style.display != 'none') ? 'none' : 'block');
+            document.getElementById("movered").style.opacity = "1";
+       
+            
+
+            var domNode = anime({
+          targets: red,
+          translateY: -200
+        });
+         document.getElementById('redoptions').style.display = "inline-block";
+         
+        }
+
+    
+    
+    
+          function showsweetredtext()
+        {
+          document.getElementById('sweetredtext').style.display = "block";
+    
+        }
+
+        function showdryredtext(){
+                
+                document.getElementById('dryredtext').style.display = "block";
+            }
+    
+    
+        function showsweetwhitetext(){
+                
+                document.getElementById('sweetwhitetext').style.display = "block";
+            }
+    
+     
+        function showdrywhitetext(){
+                
+                document.getElementById('drywhitetext').style.display = "block";
+            }
+    
+        
+     
+        function showwhitesparklingtext(){
+                
+                document.getElementById('whitesparklingtext').style.display = "block";
+            }
+            
+     
+        function showredsparklingtext(){
+                
+                document.getElementById('redsparklingtext').style.display = "block";
+            }
+    
+    
+        function showwhitedeseerttext(){
+                
+                document.getElementById('whitedeseerttext').style.display = "block";
+            }
+    
+        
+        function shownuttytext(){
+                
+                document.getElementById('nuttytext').style.display = "block";
+            }
+    
+    
+    
+    
+        function whiteclick(){        
+            $("#home1").show(500);
+            var white = document.querySelector('#movewhite .white');
+            var instructions = document.getElementById('instructions');
+   instructions.style.display = ((instructions.style.display != 'none') ? 'none' : 'block');
+            var movered = document.getElementById('movered');
+   movered.style.display = ((movered.style.display != 'none') ? 'none' : 'block');
+            var movesparkling = document.getElementById('movesparkling');
+   movesparkling.style.display = ((movesparkling.style.display != 'none') ? 'none' : 'block');
+            var movedessert = document.getElementById('movedessert');
+   movedessert.style.display = ((movedessert.style.display != 'none') ? 'none' : 'block');
+            document.getElementById("movewhite").style.opacity = "1";
+       
+            
+
+            var domNode = anime({
+          targets: white,
+          translateY: -200
+        });
+         document.getElementById('whiteoptions').style.display = "inline-block";
+         
+        }
+    
+    
+    
+    
+    
+        function sparklingclick(){        
+            $("#home1").show(500);
+            var sparkling = document.querySelector('#movesparkling .sparkling');
+            var instructions = document.getElementById('instructions');
+   instructions.style.display = ((instructions.style.display != 'none') ? 'none' : 'block');
+            var movewhite = document.getElementById('movewhite');
+   movewhite.style.display = ((movewhite.style.display != 'none') ? 'none' : 'block');
+            var movered = document.getElementById('movered');
+   movered.style.display = ((movesparkling.style.display != 'none') ? 'none' : 'block');
+            var movedessert = document.getElementById('movedessert');
+   movedessert.style.display = ((movedessert.style.display != 'none') ? 'none' : 'block');
+            document.getElementById("movesparkling").style.opacity = "1";
+       
+            
+
+            var domNode = anime({
+          targets: sparkling,
+          translateY: -200
+        });
+         document.getElementById('sparklingoptions').style.display = "inline-block";
+         
+        }
+    
+    
+        function dessertclick(){        
+            $("#home1").show(500);
+            var dessert = document.querySelector('#movedessert .dessert');
+            var instructions = document.getElementById('instructions');
+   instructions.style.display = ((instructions.style.display != 'none') ? 'none' : 'block');
+            var movewhite = document.getElementById('movewhite');
+   movewhite.style.display = ((movewhite.style.display != 'none') ? 'none' : 'block');
+            var movesparkling = document.getElementById('movesparkling');
+   movesparkling.style.display = ((movesparkling.style.display != 'none') ? 'none' : 'block');
+            var movered = document.getElementById('movered');
+   movered.style.display = ((movered.style.display != 'none') ? 'none' : 'block');
+            document.getElementById("movedessert").style.opacity = "1";
+       
+            
+
+            var domNode = anime({
+          targets: dessert,
+          translateY: -200
+        });
+         document.getElementById('dessertoptions').style.display = "inline-block";
+         
+        }
+    
+        function showsweetredmusic(){
+     
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('sweetredtext').style.display = "none";
+            document.getElementById('movered').style.display = "none";
+            $("#sweetred").slideDown("slow");
+
+
+        }
+    
+            function showdryredmusic(){
+     
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('dryredtext').style.display = "none";
+            document.getElementById('movered').style.display = "none";
+            $("#dryred").slideDown("slow");
+
+
+        }
+    
+    
+        
+            function showsweetwhitemusic(){
+     
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('sweetwhitetext').style.display = "none";
+            document.getElementById('movewhite').style.display = "none";
+            $("#sweetwhite").slideDown("slow");
+
+
+        }
+    
+    
+                function showdrywhitemusic(){
+     
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('drywhitetext').style.display = "none";
+            document.getElementById('movewhite').style.display = "none";
+            $("#drywhite").slideDown("slow");
+
+
+        }
+    
+    
+                    function showwhitesparklingmusic(){
+     
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('whitesparklingtext').style.display = "none";
+            document.getElementById('movesparkling').style.display = "none";
+            $("#whitesparkling").slideDown("slow");
+
+
+        }
+    
+                        function showredsparklingmusic(){
+     
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('redsparklingtext').style.display = "none";
+            document.getElementById('movesparkling').style.display = "none";
+            $("#redsparkling").slideDown("slow");
+
+
+        }
+    
+    
+                function showwhitedeseertmusic(){
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('whitedeseerttext').style.display = "none";
+            document.getElementById('movedessert').style.display = "none";
+            $("#whitedessert").slideDown("slow");
+
+                    
+                }
+    
+    
+                  function shownuttymusic(){
+            document.getElementById('musicicon').style.display = "none";
+            document.getElementById('nuttytext').style.display = "none";
+            document.getElementById('movedessert').style.display = "none";
+            $("#nutty").slideDown("slow");
+
+                    
+                }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        function refresh(){
+                location.reload();
+            }
+    
+    
+    
+    </script>
+            
+            
+        
+
