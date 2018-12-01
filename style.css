@@ -1,39 +1,40 @@
+/*
+Cutomize the cursor
+*/
 .custom {
     position: relative;
     cursor: url(Asset/cursor.png), auto;
-z-index: -50;
+    z-index: -50;
 
 }
 
+
+/*background color*/
 body
 {
     background-color: #393939;
-
 }
 
+
+/*wine drop image*/
 .headimage
 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-
-
 }
 
-.home{
-        display: block;
+
+/*home button*/
+.home
+{
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     cursor: url(Asset/cursor.png), auto;
-    width: 80%;
     
-}
-
-.home:hover{
-
-    cursor: url(Asset/cursor.png), auto;
 }
 
 #homebutton{
@@ -42,6 +43,14 @@ body
     width: 6%;
 }
 
+
+/*home button hover effect*/
+.home:hover{
+    cursor: url(Asset/cursor.png), auto;
+}
+
+
+/*album cover*/
 .musicpic{    
     position: relative;
     display: block;
@@ -51,6 +60,8 @@ body
     z-index: 20;
 }
 
+
+/*instrcutions*/
 .title
 {
     font-size: 1.5em;
@@ -71,6 +82,8 @@ body
     padding: 10px;
 }
 
+
+/*pictures of four types of wine*/
 .winepictures
 {
   position: absolute;
@@ -83,32 +96,46 @@ body
     width: 80%;
 }
 
+
+@media only screen and (max-width: 600px) {
+.wines{
+     display: block;
+     width: 100%; 
+    }
+}
+
+
+/*wine list*/
 .wines
 {
-  position: absolute;
-  right: 0;
-  bottom: 0px;
-  left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-
     cursor: url(Asset/cursor.png), auto;
 /*    border: solid white;*/
 }
 
+
+/*a type of wine*/
 .block
 {
-        position: relative;
+    position: relative;
     display: inline-block;
     margin-left:auto;
     margin-right: auto;
     width:24%;
     opacity: 0.5;
-        z-index: 100;
+    z-index: 100;
 }
 
+
+
+/*highlight effect*/
 .block:hover
 {
         position: relative;
@@ -128,6 +155,9 @@ body
         z-index: 100;
 }
 
+
+
+/*wine picture*/
 .wine
 {
     display: inline-block;
@@ -136,6 +166,7 @@ body
     width: 100%;
 }
 
+/*winetext*/
 .text
 {
     display: block;
@@ -144,11 +175,12 @@ body
     width:80%;
 }
 
+/*buttons*/
 #redoptions
 {
     position: relative;
     display: inline-block;
-        z-index: 100;
+    z-index: 100;
 }
 
 .button{
@@ -240,6 +272,9 @@ body
     cursor: url(Asset/cursor.png), auto;
 }
 
+
+
+/*introduction of wine*/
 .winetext
 {
 
@@ -254,7 +289,7 @@ body
 
 }
 
-
+/*music icon*/
 .music
 {
 
@@ -285,6 +320,9 @@ body
     cursor: url(Asset/cursor.png), auto;
 }
 
+
+
+/*spotify icon*/
 .spotify
 {
     display: block;
